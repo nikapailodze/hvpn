@@ -9,7 +9,7 @@ interface Props{
 
 const Button = (props:Props)=>{
     return(
-        <button className={ `${styles.defaultButton} ${props.type=="Fill" ? styles.filleButton : styles.outlinedButton}`}>
+        <button className={ `${styles.container} ${props.type=="Fill" ? styles.filleButton : styles.outlinedButton}`}>
             {props.children}
         </button>
     )
