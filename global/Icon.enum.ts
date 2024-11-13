@@ -4,5 +4,9 @@ export enum IconEnum {
 
     rightArrow = 'Icons/rightArrow.svg',
 
-    Location = 'Icons/Location.svg'
+    Location = 'Icons/Location.svg',
+
+    Search = 'Icons/Search.svg'
+
+
 }

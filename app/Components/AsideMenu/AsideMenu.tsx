@@ -4,6 +4,7 @@ import { IconEnum } from "@/global/Icon.enum";
 import IPDisplay from "./Components/IPDisplay/IPDisplay";
 import Button from "../Button/Button";
 import RecentConnection from "./Components/RecentConnection/RecentConnection";
+import SearchComponent from "./Components/SearchComponent/SearchComponent";
 
 const AsideMenu = () => {
     return (
@@ -17,6 +18,7 @@ const AsideMenu = () => {
             <Button type="Fill">Quick connection</Button>
 
             <RecentConnection/>
+            <SearchComponent/>
         </div>
     )
 }
