@@ -2,6 +2,8 @@ import styles from "./AsideMenu.module.scss"
 import Image from "next/image";
 import { IconEnum } from "@/global/Icon.enum";
 import IPDisplay from "./Components/IPDisplay/IPDisplay";
+import Button from "../Button/Button";
+import RecentConnection from "./Components/RecentConnection/RecentConnection";
 
 const AsideMenu = () => {
     return (
@@ -12,6 +14,9 @@ const AsideMenu = () => {
             </div>
 
             <IPDisplay/>
+            <Button type="Fill">Quick connection</Button>
+
+            <RecentConnection/>
         </div>
     )
 }

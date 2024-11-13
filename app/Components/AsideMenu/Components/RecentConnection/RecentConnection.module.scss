@@ -1,0 +1,55 @@
+@import "../../../../../global/colors.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+}
+
+.title {
+    color: $primary-text-color;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.content {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1.5px dashed $primary-Button;
+    border-radius: 8px;
+    width: 100%;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.detilsTitle {
+    color: $primary-text-color;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.detilsSubtext {
+    color: $secondary-gray-text-color;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+   
+}
