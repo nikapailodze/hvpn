@@ -1,4 +1,3 @@
-
 .test {
     width: 100%;
     height: 200px;
@@ -10,6 +9,7 @@
     cursor: grab;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+    // background-color: brown;
 }
 
 .content:active {

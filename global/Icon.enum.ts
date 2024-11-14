@@ -6,7 +6,9 @@ export enum IconEnum {
 
     Location = 'Icons/Location.svg',
 
-    Search = 'Icons/Search.svg'
+    Search = 'Icons/Search.svg',
+
+    DropDown = 'Icons/dropDown.svg',
 
 
 }
