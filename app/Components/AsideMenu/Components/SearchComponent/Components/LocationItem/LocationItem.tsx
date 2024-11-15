@@ -3,6 +3,7 @@ import styles from './LocationItem.module.scss'
 import Image from 'next/image';
 
 interface Props {
+    id:number,
     countryFlag: string;
     country: string;
     locations: string;
@@ -12,7 +13,7 @@ interface Props {
 
 const LocationItem = (props: Props) => {
     return (
-        <div className={styles.container}>
+        <div key={props.id} className={styles.container}>
             <div className={styles.details}>
                 <Image src={props.countryFlag} width={24} height={24} alt='Drop Down' />
                 <div className={styles.detailsText}>

@@ -23,7 +23,7 @@
 
     text-decoration: none;
     background-image: linear-gradient($primary-Button, $primary-Button);
-    background-size: 0% 0.1em;
+    background-size: 0% 1px;
     background-position-y: 100%;
     background-position-x: 50%;
     background-repeat: no-repeat;
@@ -35,5 +35,14 @@
 .option:hover,
 .option:focus,
 .option:active {
-    background-size: 100% 0.1em;
+    background-size: 100% 1px;
+}
+
+.activeTab{
+    background-image: linear-gradient($primary-Button, $primary-Button);
+    background-size: 100% 1px;
+    background-position-y: 100%;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+
 }

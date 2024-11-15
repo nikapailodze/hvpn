@@ -13,6 +13,7 @@ nextApp.prepare().then(() => {
     const mainWindow = new BrowserWindow({
       width: 800,
       height: 600,
+      title: "H-VPN",
       webPreferences: {
         nodeIntegration: false, //  false for security
         contextIsolation: true, 

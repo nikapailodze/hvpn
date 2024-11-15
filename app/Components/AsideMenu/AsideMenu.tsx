@@ -14,7 +14,7 @@ const AsideMenu = () => {
                 <p className={styles.logoTitle}>H-VPN</p>
             </div>
 
-            <IPDisplay/>
+            <IPDisplay isLocationSelected/>
             <Button type="Fill">Quick connection</Button>
 
             <RecentConnection/>

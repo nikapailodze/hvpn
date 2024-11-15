@@ -72,8 +72,9 @@ const LocationList = () => {
     return (
         <div className={styles.content}>
             <div className={styles.container}>
-                {countries.map(item => (
+                {countries.map((item,index) => (
                     <LocationItem
+                        id={index}
                         countryFlag={item.countryFlag}
                         isPremum={item.isPremium}
                         country={item.country}
