@@ -18,27 +18,35 @@
     line-height: 24px;
 }
 
-.content {
-    padding: 12px;
+.contentWrapper{
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.content {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1.5px dashed $primary-Button;
     border-radius: 8px;
     width: 100%;
-
- 
-
+}
+.selectedContent{
+    background-color: $primary-Button;
 }
 
 .details {
+    background-color: red;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .detilsTitle {
     color: $primary-text-color;
-    text-align: center;
+    text-align: left;
     font-family: "DM Sans";
     font-size: 14px;
     font-style: normal;
@@ -54,4 +62,14 @@
     font-weight: 400;
     line-height: 16px;
    
+}
+
+.dropDown {
+    border-radius: 4px;
+    background: #302F3E;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
