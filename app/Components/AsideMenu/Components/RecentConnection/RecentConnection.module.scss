@@ -9,7 +9,7 @@
     // border-radius: 8px;
 }
 
-.mainContent{
+.mainContent {
     width: 100%;
 }
 
@@ -23,7 +23,7 @@
     line-height: 24px;
 }
 
-.contentWrapper{
+.contentWrapper {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -37,14 +37,15 @@
     border: 1.5px dashed $primary-Button;
     border-radius: 8px;
     width: 100%;
+    transition: border-radius 0.1s ease-in-out;
 }
 
-.contentBorder{
+.contentBorder {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.selectedContent{
+.selectedContent {
     background-color: $primary-Button;
 }
 
@@ -72,7 +73,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
-   
+
 }
 
 .dropDown {
@@ -86,8 +87,11 @@
     cursor: pointer;
 }
 
-.locationsContainer{
-    border-radius: 8px;
+.locationsContainer {
+    // border-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -97,40 +101,38 @@
 
 
 
-//Animation 
+.locationsContainer {
+    overflow: hidden;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    padding-bottom: 16px; /* Default padding */
+}
+
+.locationsContainerShow {
+    animation-name: slideDown;
+}
+
+.locationsContainerHide {
+    animation-name: slideUp;
+    padding-bottom: 0; /* Ensure padding is removed during collapse */
+    animation-fill-mode: forwards;
+}
+
+/* Animation Definitions */
 @keyframes slideDown {
     from {
-      max-height: 0;
-      opacity: 0;
+        max-height: 0;
     }
     to {
-      max-height: 500px; /* Adjust based on content */
-      opacity: 1;
+        max-height: 600px; /* Ensure this is larger than the actual content height */
     }
-  }
-  
-  @keyframes slideUp {
+}
+
+@keyframes slideUp {
     from {
-      max-height: 500px; /* Match the "to" value of slideDown */
-      opacity: 1;
+        max-height: 600px; /* Match the "to" value of slideDown */
     }
     to {
-      max-height: 0;
-      opacity: 0;
+        max-height: 0;
     }
-  }
-  
-  .locationsContainer {
-    overflow: hidden;
-    animation-duration: 1s; /* Adjust duration */
-    animation-fill-mode: forwards;
-  }
-  
-  .locationsContainerShow {
-    animation-name: slideDown;
-  }
-  
-  .locationsContainerHide {
-    animation-name: slideUp;
-  }
-  
+}

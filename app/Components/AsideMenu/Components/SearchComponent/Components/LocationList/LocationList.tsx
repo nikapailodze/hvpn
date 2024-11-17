@@ -2,11 +2,11 @@ import LocationItem from '../LocationItem/LocationItem';
 import styles from './LocationList.module.scss'
 import Image from 'next/image'
 
-interface Props{
-    type:boolean
+interface Props {
+    type: boolean
 }
 
-const LocationList = (props:Props) => {
+const LocationList = (props: Props) => {
     const countries = [
         {
             countryFlag: "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
@@ -78,8 +78,9 @@ const LocationList = (props:Props) => {
     return (
         <div className={styles.content}>
             <div className={styles.container}>
-                {countriesFiltered.map((item,index) => (
+                {countriesFiltered.map((item, index) => (
                     <LocationItem
+                        key={index}
                         id={index}
                         countryFlag={item.countryFlag}
                         isPremum={item.isPremium}
@@ -87,7 +88,7 @@ const LocationList = (props:Props) => {
                         locations={item.locations}
                     />
                 ))}
-                
+
 
             </div>
         </div>
