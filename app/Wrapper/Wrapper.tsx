@@ -3,7 +3,6 @@ import { ReactNode } from 'react';
 import styles from './Wrapper.module.scss'
 import AsideMenu from '../Components/AsideMenu/AsideMenu';
 import Header from '../Components/Header/Header';
-import Status from '../Components/Status/Status';
 
 interface Props{
     children?:ReactNode;
@@ -15,7 +14,6 @@ const Wrapper = ({children}:Props)=>{
             <AsideMenu/>
             <div className={styles.content}>
                 <Header/>
-                <Status/>
                 {children}
             </div>
 
