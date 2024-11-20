@@ -1,0 +1,31 @@
+.conatiner {
+  display: flex;
+  padding: 16px 24px 16px 0px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background: #17181D;
+  height: 72px;
+}
+
+.contnet {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 70px;
+}
+
+.title {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}/*# sourceMappingURL=Header.module.css.map */
