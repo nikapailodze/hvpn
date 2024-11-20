@@ -73,7 +73,6 @@ const LocationList = (props: Props) => {
     ];
 
     const countriesFiltered = props.type ? countries.filter(item => item.isPremium == true) : countries.filter(item => item.isPremium == false)
-    console.log(countriesFiltered)
 
     return (
         <div className={styles.content}>

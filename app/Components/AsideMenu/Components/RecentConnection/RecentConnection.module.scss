@@ -87,6 +87,16 @@
     cursor: pointer;
 }
 
+.dropdownIcon {
+    transition: transform 0.3s ease;
+}
+
+.open {
+    transform: rotate(180deg);
+}
+
+
+
 .locationsContainer {
     // border-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -99,39 +109,37 @@
     padding-bottom: 16px;
 }
 
-
-
 .locationsContainer {
     overflow: hidden;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    padding-bottom: 16px; /* Default padding */
+    transition: padding-bottom 0.3s ease, max-height 0.3s ease;
+    padding-bottom: 16px;
 }
 
 .locationsContainerShow {
-    animation-name: slideDown;
+    padding-bottom: 16px;
+    height: auto;
 }
 
 .locationsContainerHide {
-    animation-name: slideUp;
-    padding-bottom: 0; /* Ensure padding is removed during collapse */
-    animation-fill-mode: forwards;
+    padding-bottom: 0;
+    height: 0;
 }
 
-/* Animation Definitions */
 @keyframes slideDown {
     from {
         max-height: 0;
     }
+
     to {
-        max-height: 600px; /* Ensure this is larger than the actual content height */
+        max-height: 600px;
     }
 }
 
 @keyframes slideUp {
     from {
-        max-height: 600px; /* Match the "to" value of slideDown */
+        max-height: 600px;
     }
+
     to {
         max-height: 0;
     }

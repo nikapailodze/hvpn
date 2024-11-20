@@ -48,7 +48,11 @@ const RecentConnection = (props: Props) => {
                         </div>
                         {props.isLocationSelected && (
                             <div onClick={onDropdownClick} className={styles.dropDown}>
-                                <Image src={IconEnum.DropDown} width={24} height={24} alt="Drop Down" />
+                                <Image 
+                                src={IconEnum.DropDown} 
+                                className={`${styles.dropdownIcon} ${showOptions ? styles.open : ""}`}                                width={24} 
+                                height={24} 
+                                alt="Drop Down" />
                             </div>
                         )}
                     </div>

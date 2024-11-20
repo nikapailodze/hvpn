@@ -18,7 +18,7 @@ const RecenetLocationItem = (props: Props) => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.content}>
+            <div className={`${styles.content} ${isChecked && styles.contentActive}`}>
                 <p className={styles.text}>{props.locationName}</p>
                 <div className={styles.speed}>
                     <Image src={'/Icons/msBlue.svg'} width={24} height={24} alt='speed in milliseconds' />
