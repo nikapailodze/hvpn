@@ -111,12 +111,11 @@
 
 .locationsContainer {
     overflow: hidden;
-    transition: padding-bottom 0.3s ease, max-height 0.3s ease;
-    padding-bottom: 16px;
+    transition: max-height 0.3s ease;
+    // padding-bottom: 16px;
 }
 
 .locationsContainerShow {
-    padding-bottom: 16px;
     height: auto;
 }
 

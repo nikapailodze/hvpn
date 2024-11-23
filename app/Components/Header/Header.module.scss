@@ -1,4 +1,4 @@
-.conatiner {
+.container {
     display: flex;
     padding: 16px 24px 16px 0px;
     justify-content: flex-end;
@@ -6,6 +6,7 @@
     width: 100%;
     background: #17181D;
     height: 72px;
+    position: relative;
 }
 
 .contnet {
@@ -28,4 +29,55 @@
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
+}
+
+.dropDown{
+    transition: transform 0.3s ease;
+}
+
+.open {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+.locationsContainer {
+    overflow: hidden;
+    transition: padding-bottom 0.3s ease, max-height 0.3s ease;
+    // padding-bottom: 16px;
+    position: absolute;
+    top: 72px;
+    right: 24px;
+}
+
+.locationsContainerShow {
+    // padding-bottom: 16px;
+    height: auto;
+}
+
+.locationsContainerHide {
+    padding-bottom: 0;
+    height: 0;
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+    }
+
+    to {
+        max-height: 600px;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        max-height: 600px;
+    }
+
+    to {
+        max-height: 0;
+    }
 }

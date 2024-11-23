@@ -3,8 +3,7 @@ import styles from "./Button.module.scss"
 
 interface Props{
     children:ReactNode  ,
-    type: "Fill" | "Outline",
-    
+    type: "Fill" | "Outline",    
 }
 
 const Button = (props:Props)=>{

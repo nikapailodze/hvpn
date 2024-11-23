@@ -1,13 +1,19 @@
 import styles from "./AsideMenu.module.scss"
 import Image from "next/image";
 import { IconEnum } from "@/global/Icon.enum";
+
+//Components
 import IPDisplay from "./Components/IPDisplay/IPDisplay";
 import Button from "../Button/Button";
 import RecentConnection from "./Components/RecentConnection/RecentConnection";
 import SearchComponent from "./Components/SearchComponent/SearchComponent";
+
 import { useState } from "react";
+import { useRecoilState } from "recoil";
+import { locationIsSelectedState } from "@/global/atoms";
 
 const AsideMenu = () => {
+    // const [isLocationSelected] = useRecoilState(locationIsSelectedState)
     const [isLocationSelected] = useState(true)
 
     return (

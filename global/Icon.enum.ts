@@ -10,5 +10,13 @@ export enum IconEnum {
 
     DropDown = 'Icons/dropDown.svg',
 
+    Currency = 'Icons/currency.svg',
 
+    Settings='Icons/settings.svg',
+
+    Wallet = 'Icons/wallet.svg',
+
+    logout='Icons/Logout.svg',
+
+    Premium = 'Icons/premiumIocn.svg'
 }
