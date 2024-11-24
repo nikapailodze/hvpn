@@ -4,14 +4,18 @@ import styles from './DropOptionList.module.scss'
 import { useRouter } from 'next/navigation';
 
 
-const DropOptionList = ()=>{
-    const router  = useRouter()
+const DropOptionList = () => {
+    const router = useRouter()
 
-    const onSettingsClick = ()=>{
-        // router.push('/AccountSettings')
+    const onSettingsClick = () => {
+        router.push('/AccountSettings')
     }
 
-    return(
+    const onLogoutClick=()=>{
+        router.push('/')
+    }
+
+    return (
         <div className={styles.container}>
             <div className={styles.personalInfo}>
                 <p className={styles.name}>Wade Warren</p>
@@ -19,10 +23,10 @@ const DropOptionList = ()=>{
             </div>
 
             <div className={styles.options}>
-                <DropOption onClick={onSettingsClick} image={IconEnum.Settings}  title='Account Settings' />
-                <DropOption image={IconEnum.Wallet}  title='Billing and subscription' />
-                <DropOption image={IconEnum.Currency}  title='Payment methods' />
-                <DropOption image={IconEnum.logout}  title='Logout' />
+                <DropOption onClick={onSettingsClick} image={IconEnum.Settings} title='Account Settings' />
+                <DropOption image={IconEnum.Wallet} title='Billing and subscription' />
+                <DropOption image={IconEnum.Currency} title='Payment methods' />
+                <DropOption onClick={onLogoutClick} image={IconEnum.logout} title='Logout' />
 
             </div>
 
