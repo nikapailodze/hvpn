@@ -25,8 +25,8 @@ const DropOptionList = () => {
             <div className={styles.options}>
                 <DropOption onClick={onSettingsClick} image={IconEnum.Settings} title='Account Settings' />
                 <DropOption image={IconEnum.Wallet} title='Billing and subscription' />
-                <DropOption image={IconEnum.Currency} title='Payment methods' />
-                <DropOption onClick={onLogoutClick} image={IconEnum.logout} title='Logout' />
+                <DropOption image={IconEnum.CurrencyActive} title='Payment methods' />
+                <DropOption onClick={onLogoutClick} image={IconEnum.logoutActive} title='Logout' />
 
             </div>
 
