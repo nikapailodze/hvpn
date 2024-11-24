@@ -11,8 +11,11 @@ export default function Home() {
 
             <div className={styles.conatiner}>
                 <h1 className={styles.title}>Account Settings</h1>
-                <SettingsList/>
-                
+                <SettingsList />
+                <button className={styles.issueBtn}>
+                    Report an issue
+                </button>
+
             </div>
         </div>
 

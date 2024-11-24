@@ -22,6 +22,8 @@ export enum IconEnum {
     logout = 'Icons/Logout.svg',
     logoutActive = 'Icons/LogoutActive.svg',
 
-    Premium = 'Icons/premiumIocn.svg'
+    Premium = 'Icons/premiumIocn.svg',
+
+    Play= 'Icons/play.svg'
     
 }
